@@ -1,8 +1,8 @@
 cask "arctime-pro" do
   version "4.3"
-  sha256 "af03d9e29724346cba65f1bded6d9ef434b9d779bc5c49daa4cf7fe6a5c303c8"
+  sha256 "9d22e35be3462bb5784387f6b1e3224a1d3160ac60781083c832f922a4ee5122"
 
-  url "https://dl.arctime.pro/ARCTIME_PRO_#{version}_MAC_SIGN.zip",
+  url "https://dl.arctime.pro/ARCTIME_PRO_#{version}_MAC.zip",
       verified: "dl.arctime.pro/"
   name "arctime-pro"
   desc "Cross platform subtitle tool"
