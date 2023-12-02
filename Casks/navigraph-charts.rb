@@ -3,9 +3,8 @@ cask "navigraph-charts" do
   sha256 "4d093338db87818dee8a4995dae8b72e76982878e313ab4d281336b2d6759afe"
 
   url "https://download.navigraph.com/software/charts/mac/Navigraph%20Charts%20#{version}.dmg"
-  # verified: "dl.arctime.pro/"
   name "navigraph-charts"
-  desc "Navigraph Charts"
+  desc "Access professional and updated Jeppesen charts for flight simulation"
   homepage "https://navigraph.com/"
 
   livecheck do
@@ -13,13 +12,12 @@ cask "navigraph-charts" do
     strategy :yaml do |yaml|
       yaml["version"]
     end
-  end  
+  end
 
   auto_updates true
+  depends_on macos: ">= :high_sierra"
 
   app "Navigraph Charts.app"
-
-  depends_on macos: ">= :high_sierra"
 
   zap trash: [
     "~/Library/Application Support/Navigraph Charts",
